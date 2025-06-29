@@ -4,24 +4,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teshawn Wouter </title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2dd0811882.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header"></div>  
+    <div id="header">
         <div class="container">
             <nav>
-                <img src="" class="logo">
+                <div class="logo"> GameDev / creative software dev</div>
                 <ul>
                     <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>SoftwareDeveloper/GameDeveloper</p>
-                <h1>Hi, I'm Teshawn Wouter</h1>
+                <p>GameDeveloper</p>
+                <h1>Hi , My name is <br><span>Teshawn Wouter</span></h1>
             </div>
-        </div> 
-    </div> 
+        </div>
+    </div>  
+    <!------------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="Img/me.png" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>words words</p>
+                    <div class="tab-title">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class = "tab-links" onclick="opentab('Educations')">Educations</p>
+                        <p class = "tab-links" onclick="opentab('Experience')">Experience</p>
+                       
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Gamedev?</span><br>making Game in Unity</li>
+                            <li><span>creativeSoftwareDev</span><br>C#</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Educations">
+                        <ul>
+                            <li><span>huidige Studie</span><br>Graphic Lyceum Utrecht creative Software Developer</li>
+                            <li><span>2023 af gestudeert</span><br>Davinci Front-End Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Code Languages</span><br>C#</li>
+                            <li><span>Software</span><br>Unity</li>
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <!------------project------------>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-brands fa-unity"></i>
+                    <h2>Game name</h2>
+                    <p>game Discription</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-unity"></i>
+                    <h2>Game name</h2>
+                    <p>game Discription</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-unity"></i>
+                    <h2>Game name</h2>
+                    <p>game Discription</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+       <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontants = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontant of tabcontants){
+                tabcontant.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script>
 </body>
 </html>

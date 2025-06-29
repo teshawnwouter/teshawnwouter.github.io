@@ -1,7 +1,11 @@
+@font-face {
+    font-family: 'RapidResponse';
+    src: url(RapidResponseTitleItalic-rvYM7.otf);
+}
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poopins',sans-serif;
+    font-family: 'RapidResponse';
     box-sizing: border-box;
 }
 body{
@@ -11,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url();
+    background-image: url(Img/GameBackGround.png);
     background-size: cover;
     background-position: center;
 }
@@ -19,33 +23,36 @@ body{
     padding: 10px, 10%;
 }
 nav{
-    display: flex;
+    display:  flex;
     align-items: center;
-    justify-content:  space-between;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap:  wrap;
 }
 .logo{
-    width: 140px;
+    font-size: 200%;
+    font-family: 'RapidResponse';
+    color: #ffc429;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li{
-    color: #fff;
+
+nav ul li a{
+    color: darkblue;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
-nav ul li::after{
+nav ul li a::after{
     content: '';
-    width: 0;
+    width: 0%;
     height: 3px;
-    background: #ff004f;
-    position:  absolute;
+    background: crimson;
+    position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom:  -6px;
     transition: 0.5s;
 }
 nav ul li a:hover::after{
@@ -53,9 +60,98 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 30pz;
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+}
+.header-text p{
+    color: gold;
+}
+.header-text h1 span{
+    color: crimson;
+}
+
+/*------------about------------*/
+#about{
+    padding: 80px 0;
+    color:aqua
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col2{
+    flex-basis: 60%;
+}
+
+
+.about-col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-title{
+    display: flex;
+    margin: 2px,0,40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 30px 0;
+}
+.tab-contents ul li span{
+color: crimson;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*------------------------------projects--------------------*/
+#projects{
+    padding: 30px 0;
+}
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.projects-list div{
+    background: gray;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
 }
