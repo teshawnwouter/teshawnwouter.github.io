@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teshawn Wouter </title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2dd0811882.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div id="header">
@@ -12,10 +12,10 @@
             <nav>
                 <div class="logo"> GameDev / creative software dev</div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a class="nav-link" href="#about">about</a></li>
+                    <li><a class="nav-link" href="#games">Games</a></li>
+                    <li><a class="nav-link" href="#code">Code</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -25,6 +25,7 @@
         </div>
     </div>  
     <!------------about------------>
+    <section id="about">
     <div id="about">
         <div class="container">
             <div class="row">
@@ -33,7 +34,7 @@
                 </div>
                 <div class="about-col2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>words words</p>
+                    <p>I am a very weird yet intrresting person. Very determent and eager to learn. I love gaming, coding, making friends, and some more activites like exploring traveling. I dont do too wel with change but i do bounce back overtime. When push comes to shove i always give it my all and do what i can to make sure the job gets done. I never quit and hate leaving work un finished</p>
                     <div class="tab-title">
                         <p class = "tab-links active-link" onclick="opentab('skills')">skills</p>
                         <p class = "tab-links" onclick="opentab('Educations')">Educations</p>
@@ -62,34 +63,93 @@
             </div>
         </div>
     </div>
+</section>
 
-    <!------------project------------>
+    <!------------Games------------>
+    <section id="games">
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My projects</h1>
+                <div class="projects-list">
+                    <div>
+                        <img src="Img/highjump.gif">
+                        <i class="fa-brands fa-unity"></i>
+                        <h2>Game name</h2>
+                        <p>Getting over it Style platfromer with a robot making his way to find out whats on the top of a pillar</p>
+                    </div>
+                    <div>
+                         <img src="Img/SecondProject.gif">
 
-    <div id="projects">
+                        <i class="fa-brands fa-unity"></i>
+                        <h2>Game name</h2>
+                        <p>brave hero who figths all the monster the world throws at him overwelming him he must fight till his last breath</p>
+                    </div>
+                    <div>
+                        <img src="Img/firstproject.gif">
+                        <i class="fa-brands fa-unity"></i>
+                        <h2>Game name</h2>
+                        <p>go through space and seek and rank up score see how many you can destroy. Use uniqe powers in your arsenal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------code------------>
+    <section id="code">
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Code Snippets</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="Img/playerMoveGrapple.png">
+                        <div class="layer">
+                            <h3>High Jump</h3>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Img/Lootlistscript snippet.png">
+                        <div class="layer">
+                            <h3>Rougelike-Lite</h3>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Img/waveSpawner.png">
+                        <div class="layer">
+                            <h3>Shmup</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </section>
+<!------------contact------------>
+<section id="contact">
+    <div id="cont">
         <div class="container">
-            <h1 class="sub-title">My projects</h1>
-            <div class="projects-list">
-                <div>
-                    <i class="fa-brands fa-unity"></i>
-                    <h2>Game name</h2>
-                    <p>game Discription</p>
-                    <a href="#">learn more</a>
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> teshawnwouter@hotmail.nl</p>
+                    <p><i class="fa-solid fa-phone"></i> 06 12953096</p>
+                    <a href="CV/Teshawn CVENG.pdf" download class="btn btn2">Download CVENG</a>
+                    <a href="CV/Teshawn CVNED.pdf" download class="btn btn2">Download CVNED</a>
                 </div>
-                <div>
-                    <i class="fa-brands fa-unity"></i>
-                    <h2>Game name</h2>
-                    <p>game Discription</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-unity"></i>
-                    <h2>Game name</h2>
-                    <p>game Discription</p>
-                    <a href="#">learn more</a>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
     </div>
+</section>
+
        <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontants = document.getElementsByClassName("tab-contents");
@@ -106,5 +166,21 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
        </script>
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTk3khaoWdkWYboYbugUalfJRKfZXoQOdpEtvNsJSWuwpIBhjoB911rzag47LRotvO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => msg.innerHTML = "message sent succesfully!!")
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
 </body>
 </html>
