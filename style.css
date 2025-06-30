@@ -160,6 +160,7 @@ color: crimson;
 }
 .projects-list div{
     background: gray;
+    margin: 30px;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
