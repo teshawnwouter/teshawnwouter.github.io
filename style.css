@@ -8,6 +8,9 @@
     font-family: 'RapidResponse';
     box-sizing: border-box;
 }
+.discriptions{
+    font-family: 'Courier New', Courier, monospace;
+}
 body{
     background-color: #080808;
     color: #fff;
@@ -73,11 +76,10 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: crimson;
 }
-
 /*------------about------------*/
 #about{
     padding: 80px 0;
-    color:aqua
+    color:white;
 }
 .row{
     display: flex;
@@ -99,7 +101,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: crimson;
 }
 .tab-title{
     display: flex;
