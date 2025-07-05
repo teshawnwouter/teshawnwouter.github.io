@@ -11,14 +11,14 @@
         <div class="container">
             <nav>
                 <div class="logo"> GameDev / creative software dev</div>
-                <ul>
+                <ul id="sideMenu">
                     <li><a class="nav-link" href="#about">about</a></li>
                     <li><a class="nav-link" href="#games">Games</a></li>
                     <li><a class="nav-link" href="#code">Code</a></li>
                     <li><a class="nav-link" href="#contact">Contact</a></li>
-                    <i class="fas fa-xmark"></i>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>GameDeveloper</p>
@@ -189,6 +189,18 @@
         form.reset()
         .catch(error => console.error('Error!', error.message))
     })
+    </script>
+    <script>
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sideMenu.style.right = "-300";
+        }
+
     </script>
 </body>
 </html>
