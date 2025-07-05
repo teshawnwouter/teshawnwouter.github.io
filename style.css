@@ -346,12 +346,12 @@ nav .fas{
     }
    nav ul li{
         display: block;
-        margin: 25px;
+        margin: 50px;
     }
     nav ul .fas{
         position: absolute;
         top: 25px;
-        left: 25px;
+        left: 50px;
         cursor: pointer;
     }
     .sub-title{
