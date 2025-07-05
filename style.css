@@ -8,9 +8,6 @@
     font-family: 'RapidResponse';
     box-sizing: border-box;
 }
-.discriptions{
-    font-family: 'Courier New', Courier, monospace;
-}
 body{
     background-color: #080808;
     color: #fff;
@@ -18,7 +15,8 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Img/GameBackGround.png);
+    background-image: linear-gradient(to top,black,transparent);
+    background-image: url(Img/Galaxy-Space-Wallpaper-14-1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -44,7 +42,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: darkblue;
+    color: crimson;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -64,7 +62,7 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 20%;
-    font-size: 30pz;
+    font-size: 30px;
 }
 .header-text h1{
     font-size: 60px;
@@ -92,7 +90,10 @@ nav ul li a:hover::after{
 .about-col2{
     flex-basis: 60%;
 }
-
+.explain{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
 
 .about-col1 img{
     width: 100%;
@@ -159,7 +160,7 @@ color: crimson;
     transition: transform 0.5s;
 }
 .projects-list div{
-    background: gray;
+    background: rgb(197, 196, 196);
     margin: 30px;
     padding: 40px;
     font-size: 13px;
@@ -187,6 +188,17 @@ color: crimson;
     background-color: crimson;
     transform: translateY(-10px);
 }
+.projects-list h2{
+    color: crimson;
+}
+.discriptions{
+    font-family: 'Courier New', Courier, monospace;
+    color: #080808;
+}
+.myjob{
+    font-family: 'Courier New', Courier, monospace;
+    color: #080808;
+}
 /*---------------code-----------*/
 #portfolio{
     padding: 50px,0;
@@ -199,11 +211,13 @@ color: crimson;
 }
 .work{
     border-radius: 10px;
+    height: 500px;
     position: relative;
     overflow:hidden;
 }
 .work img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -279,7 +293,8 @@ form input, form textarea{
     background: wheat;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -294,7 +309,30 @@ form .btn2{
     margin-top: -40px;
     display:  block;
 }
+.email{
+    font-family: 'Courier New', Courier, monospace;
+}
 
 html{
     scroll-behavior:smooth ;
+}
+/*------------------repsone----------------*/
+nav .fas{
+    display: none;
+}
+@media only screen and (max-witdh:600px){
+    #header{
+        background-image: url();
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+    display: block;
+    font-size: 25px;
+    }
 }
