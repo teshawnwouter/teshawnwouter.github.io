@@ -32,6 +32,7 @@ nav{
 }
 
 .logo{
+    margin: -30;
     font-size: 200%;
     font-family: 'RapidResponse';
     color: #ffc429;
@@ -71,6 +72,7 @@ nav ul li a:hover::after{
 }
 .header-text p{
     color: gold;
+    margin-left: -30;
 }
 .header-text h1 span{
     color: crimson;
