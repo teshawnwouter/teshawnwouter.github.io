@@ -186,7 +186,7 @@ color: crimson;
     display: inline-block;
 }
 .projects-list div:hover{
-    background-color: crimson;
+    background-color: green;
     transform: translateY(-10px);
 }
 .projects-list h2{
