@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'RapidResponse';
-    src: url(RapidResponseTitleItalic-rvYM7.otf);
+    src: url(SundayMagic-Regular.otf);
 }
 *{
     margin: 0;
@@ -131,8 +131,9 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
+
 .tab-contents ul li{
     list-style: none;
     margin: 30px 0;
@@ -154,28 +155,48 @@ color: crimson;
     grid-gap: 40px;
     margin-top: 50px;
 }
-.projects-list img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
+
+.projects-list > * {
+    height: 100%;
 }
-.projects-list div{
+
+.projects-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projects-list div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background: rgb(197, 196, 196);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    height: 100%;
 }
-.projects-list div i{
+
+.projects-list div img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.projects-list div i {
     font-size: 50px;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
-.projects-list div h2{
+
+.projects-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    color: crimson;
 }
 .projects-list div a{
     text-decoration: none;
@@ -374,4 +395,31 @@ nav .fas{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+}
+/*-------------------gamesshowcase----------------*/
+#header-Game1 ,#header-Game2, #header-Game3, #header-Game4{
+    background-size: cover;
+    background-position: center;
+}
+
+#header-game1{
+    background-image: url(Img/highjump.gif);
+
+}
+
+#header-Game2{
+    background-image: url(Img/SecondProject.gif);
+}
+
+#header-Game3{
+    background-image: url(Img/firstproject.gif);
+}
+
+#header-Game4{
+    background-image: url(Img/CatCafee.gif);
+}
+
+.gamedisc{
+    color: black;
+    font-size: 20px;
 }
