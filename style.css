@@ -16,6 +16,7 @@ body{
     width: 100%;
     height: 100vh;
     background-image: url(Img/SecondProject.gif);
+    mask-image: linear-gradient(180deg,black 65%,transparent 100%);
     background-size: cover;
     background-position: center;
 }
